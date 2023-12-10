@@ -136,8 +136,6 @@ def main():
         return "Not param for folder"
     if not path.exists():
         return "Folder is not exists"
-    with ThreadPoolExecutor() as executor:
-        pass
     
     sort_folder(path)
     delete_dir(path)
